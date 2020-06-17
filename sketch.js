@@ -86,8 +86,8 @@ function setup() {
   alignSize = canvW / (cnt - 1);
   cnt = crimData.list_total_count;
 
-  for (var i = 1; i < cnt; i++) {
-    drops.push(new Drop(alignSize * (i - 1) - alignSize / 2, canvH, crimData.row[i].BALSAENG_1));
+  for (var i = 0; i < cnt; i++) {
+    drops.push(new Drop(alignSize * (i ) - alignSize / 2, canvH, crimData.row[i].BALSAENG_1));
   }
 
   textSize(10);
